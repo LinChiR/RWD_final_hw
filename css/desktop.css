@@ -1,0 +1,300 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+  height: auto ;
+}
+.clearfix{
+  clear: both;
+}
+/*****css reset*****/
+
+.wrap{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.header{
+  position: relative;
+  background:#fff url(../img/header_desktop.png)center center no-repeat;/*利用center做到上下左右置中*/
+  max-width: 100%;
+  height: 420px;
+}
+
+.bar{
+  background: rgba(0,0,0,0.75);
+  height: 56px;
+  margin-bottom: 67px; 
+}
+.logo{
+  position: absolute;
+  top: 12px;
+  left: 42px;
+  width: 120px;
+}
+.logo a{
+  background: rgba(0,0,0,0.75);
+  display: block;
+  width: 120px;
+  height: 24px;
+  text-indent:-99999px;
+  background-image: url(../img/logo_w.png);
+}
+.menu ul{
+  float: right;
+  margin-top: 18px;
+  margin-right: 42px;
+}
+.menu li{
+  float: left;
+}
+.menu a{
+  color: #ffffff;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-decoration: none;
+}
+.menu a:hover{
+  border-bottom: 2px solid #ffffff;
+}
+.menu a:active{
+  color: black;
+  border-bottom: 2px solid #000000;
+}
+
+.slogan{
+  margin: 0 auto;
+  max-width: 468px;
+  padding-bottom: 20px;
+  background: rgba(0,0,0,0.35);
+  text-align: center;
+}
+.slogan h2{
+  padding-top: 20px;
+  color: #ffffff;
+  font-size: 36px;
+}
+.slogan p{
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 1em;
+}
+.main{
+  position: relative;
+}
+.main h2{
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 31px;
+  font-size: 20px;
+  color: #3D1101;
+  line-height: 1.5;
+  display: block;
+  width: 200px;
+  height: 64px;
+  text-align: center;
+}
+.project{
+  float: left;
+  max-width: 260px;
+  margin-left: 52px;
+  margin-right: 28px;
+}
+.project img{
+  margin-left: 30px;
+}
+.project h3{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 11px;
+  color: #3D1101;
+  font-size: 18px;
+  font-weight:bold;
+}
+.project p{
+  font-size: 16px;
+  color: #3D1101;
+  margin-bottom: 50px;
+}
+.chefPart{
+  width: 100%;
+  background: #3D1101;
+  margin-bottom: 50px;
+}
+.chefPart img{
+  margin-left: 42px;
+}
+.chefIntroction{
+  display: block;
+  max-width: 410px;
+  float: right;
+  margin-top: 81px;
+  margin-right: 77px;
+  color: #ffffff;
+}
+.chefIntroction h3{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.chefIntroction h4{
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.chefIntroction p{
+  line-height: 1.5;
+}
+.feedback{
+  max-width: 300px;
+  float: left;
+  margin-left: 30px;
+}
+.feedback h3{
+  float: right;
+  margin-right: 107px;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #3D1101;
+}
+.feedback p{
+  max-width: 220px;
+  margin-left: 80px; 
+  line-height: 1.5;
+  color: #3D1101;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.feedback span{
+  margin-left: 200px;
+  color: #3D1101;
+}
+
+.reservation{
+  max-width: 100%;
+}
+.reservation h2{
+  color: #3D1101;
+}
+.map{
+  float: left;
+  margin-left: 42px;
+}
+.form{
+  max-width: 45%;
+  margin-left: 522px;
+}
+.form .text{
+width: 99.83%;
+padding: 5px 0px;
+margin-top: 6px;
+margin-bottom: 12px;
+}
+.form #vegetarian{
+  margin-top: 8px;
+}
+.form label{
+  font-size: 14px;
+  color: #3D1101;
+}
+.form .btn{
+  float: right;
+  margin-top: 67px;
+  margin-left: 11px;
+  margin-bottom: 50px;
+  width: 70px;
+  height: 32px;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+}
+.form .btn:hover{
+  box-shadow: 2px 2px 2px rgba(20%,20%,40%,0.6);
+}
+.form .btn:active{
+  box-shadow:inset 2px 2px 2px rgba(20%,20%,20%,0.5);
+}
+
+.footer{
+  max-width: 100%;
+  height: 232px;
+  background: rgba(0,0,0,0.02);
+}
+.footer .regarding{
+  max-width: 299px;
+  margin-top: 50px;
+  margin-left: 43px;
+  float: left;
+}
+.regarding p{
+  font-size: 16px;
+  color: #3D1101;
+}
+.footer h3{
+  font-size: 24px;
+  color: #3D1101;
+  margin-bottom: 16px;
+}
+.footer li{
+  font-size: 16px;
+  color: #3D1101;
+  margin-bottom: 0.25em;
+}
+.footer .contact{
+  margin-top: 50px;
+  margin-left: 20px;
+  max-width: 30%;
+  float: left;
+}
+.bottomLogo{
+  float: right;
+  margin-top: 54px;
+  margin-right: 49px;
+}
