@@ -88,7 +88,8 @@ img{
   text-indent:-99999px;
   background-image: url(../img/logo_w.png);
 }
-.menu ul{
+
+.menu{
   float: right;
   margin-top: 18px;
   margin-right: 42px;
@@ -96,11 +97,12 @@ img{
 .menu li{
   float: left;
 }
-.menu a{
+.menu li a{
+  display: block;
   color: #ffffff;
   font-size: 16px;
-  margin-left: 15px;
-  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-decoration: none;
 }
 .menu a:hover{
@@ -111,6 +113,55 @@ img{
   border-bottom: 2px solid #000000;
 }
 
+.showmenu {
+  display: none;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.showmenu:active{
+  color: black;
+}
+@media (max-width: 768px){
+  .menu{
+    /*隱藏*/
+    max-height: 0px;
+    overflow: hidden;
+    /*顯示*/
+    transition: 2.3s;
+    position: absolute;
+    z-index: 30;
+    top: 56px;
+    right: 0;
+    left: 0;
+    background: #000000;
+  }
+  .menu{
+    margin: 0;
+  }
+  .menu li{
+    float: none;
+    margin: 1em;
+    border-bottom: 1px dashed #ffffff;
+  }
+  .menu li a{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+  }
+  .menu li a:hover{
+    background: #ffffff;
+    color: #000000;
+  }
+  .showmenu{
+    display: block;
+    margin: 1em;
+    float: right;
+  }
+  .menu-show .menu{
+    max-height: 500px
+  }
+}
 .slogan{
   margin: 0 auto;
   max-width: 468px;
@@ -128,173 +179,129 @@ img{
   font-size: 16px;
   margin-top: 1em;
 }
-.main{
-  position: relative;
-}
-.main h2{
+.content .mainLogo{
+  width: 30%;
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 31px;
-  font-size: 20px;
-  color: #3D1101;
-  line-height: 1.5;
-  display: block;
-  width: 200px;
-  height: 64px;
+}
+.mainLogo img{
+  margin-left: 10%;
+}
+.content h3{
   text-align: center;
+  color: #3D1101;
+  margin-bottom: 35px;
+  font-weight: bold;
 }
-.project{
-  float: left;
-  max-width: 260px;
-  margin-left: 52px;
-  margin-right: 28px;
+.login{
+  width: 300px;
+  height: 273px;
+  margin: 0 auto;
+  border-top: 2px solid #FF5E45;
+  box-shadow: 2px 2px 2px rgba(20%,20%,40%,0.6);
+  margin-bottom: 52px;
 }
-.project img{
-  margin-left: 30px;
-}
-.project h3{
+.login h4{
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 11px;
-  color: #3D1101;
-  font-size: 18px;
-  font-weight:bold;
-}
-.project p{
-  font-size: 16px;
-  color: #3D1101;
-  margin-bottom: 50px;
-}
-.chefPart{
-  width: 100%;
-  background: #3D1101;
-  margin-bottom: 50px;
-}
-.chefPart img{
-  margin-left: 42px;
-}
-.chefIntroction{
-  display: block;
-  max-width: 410px;
-  float: right;
-  margin-top: 81px;
-  margin-right: 77px;
-  color: #ffffff;
-}
-.chefIntroction h3{
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-.chefIntroction h4{
-  font-size: 16px;
-  margin-bottom: 12px;
-}
-.chefIntroction p{
-  line-height: 1.5;
-}
-.feedback{
-  max-width: 300px;
-  float: left;
-  margin-left: 30px;
-}
-.feedback h3{
-  float: right;
-  margin-right: 107px;
-  margin-top: 15px;
   font-size: 18px;
   color: #3D1101;
-}
-.feedback p{
-  max-width: 220px;
-  margin-left: 80px; 
-  line-height: 1.5;
-  color: #3D1101;
-  font-size: 16px;
+  margin-top: 12px;
   margin-bottom: 16px;
+  font-weight: bold;
 }
-.feedback span{
-  margin-left: 200px;
+.login label{
   color: #3D1101;
+  margin-left: 5%;
 }
-
-.reservation{
-  max-width: 100%;
+.login input{
+  width: 90%;
+  margin-left: 5%;
 }
-.reservation h2{
-  color: #3D1101;
+#EmailAddress{
+  margin-bottom: 15px;
 }
-.map{
-  float: left;
-  margin-left: 42px;
-}
-.form{
-  max-width: 45%;
-  margin-left: 522px;
-}
-.form .text{
-width: 99.83%;
-padding: 5px 0px;
-margin-top: 6px;
-margin-bottom: 12px;
-}
-.form #vegetarian{
-  margin-top: 8px;
-}
-.form label{
+.login a{
+  display: block;
+  margin-left: 5%;
+  margin-bottom: 30px;
+  text-decoration: none;
   font-size: 14px;
-  color: #3D1101;
+  color: #FF5E45;
 }
-.form .btn{
-  float: right;
-  margin-top: 67px;
-  margin-left: 11px;
-  margin-bottom: 50px;
-  width: 70px;
-  height: 32px;
-  color: #ffffff;
+.login a:hover{
+  color: red;
+}
+.login a:active{
+  font-size: 16px;
+}
+.login .btn{
+  width: 40%;
   border-radius: 5px;
   border: none;
+  padding:6px 0px;
+  margin-bottom: 15px;
+  color: #ffffff; 
 }
-.form .btn:hover{
+.login .btn:hover{
   box-shadow: 2px 2px 2px rgba(20%,20%,40%,0.6);
-}
-.form .btn:active{
+} 
+.login .btn:active{
   box-shadow:inset 2px 2px 2px rgba(20%,20%,20%,0.5);
 }
 
 .footer{
-  max-width: 100%;
-  height: 232px;
+  width: 100%;
+  max-height: 232px;
   background: rgba(0,0,0,0.02);
 }
 .footer .regarding{
-  max-width: 299px;
+  width: 30%;
   margin-top: 50px;
   margin-left: 43px;
   float: left;
 }
-.regarding p{
-  font-size: 16px;
-  color: #3D1101;
-}
+
 .footer h3{
   font-size: 24px;
   color: #3D1101;
   margin-bottom: 16px;
 }
 .footer li{
+  display: block;
   font-size: 16px;
   color: #3D1101;
   margin-bottom: 0.25em;
 }
 .footer .contact{
+  width: 30%;
   margin-top: 50px;
   margin-left: 20px;
-  max-width: 30%;
   float: left;
 }
 .bottomLogo{
+  width: 25%;
   float: right;
   margin-top: 54px;
   margin-right: 49px;
+}
+@media(max-width:768px){
+  .footer .regarding{
+    max-width: 235px;
+    margin-left: 11px;
+  }
+  .footer .contact{
+    max-width: 235px;
+  }
+}
+@media(max-width:414px){
+  .footer .regarding{
+    width: 80%;
+    margin-left: 5%;
+  }
+  .footer .contact{
+    width: 80%;
+    margin-left: 5%;
+  }
+  .bottomLogo{
+    width: 80%;
+    margin-left: 5%;
 }

@@ -180,6 +180,111 @@ img{
   margin-top: 1em;
 }
 
+.content .mainLogo{
+  width: 30%;
+  margin: 0 auto;
+}
+.mainLogo img{
+  margin-left: 10%;
+}
+.content h3{
+  text-align: center;
+  color: #3D1101;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+
+.register{
+  max-width: 620px;
+  height: auto;
+  background: rgba(0,0,0,0.02);
+  border-top: 2px solid #FF5E45;
+  margin: 0 auto;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.75);
+  margin-bottom: 50px;
+}
+.register h4{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #3D1101;
+  margin-top: 11px;
+  margin-bottom: 18px;
+}
+.register .terms{
+  width: 45%;
+  float: left;
+  margin-left: 15px;
+}
+.terms p{
+  color: #3D1101;
+  line-height: 1;
+}
+.register .registerForm{
+  width: 45%;
+  float: left;
+  margin-left: 20px;
+}
+.registerForm label{
+  display: block;
+  color: #3D1101;
+}
+#email{
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 3px 0;
+}
+#password{
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 3px 0;
+}
+#password2{
+  width: 100%;
+  padding: 3px 0;
+}
+.registerForm a{
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #FF5E45;
+  margin-bottom: 30px;
+}
+.registerForm a:hover{
+  color: red;
+}
+.registerForm a:active{
+  font-size: 16px;
+}
+.btn{
+  float: right;
+  width: 40%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background: #F56C23;
+  padding:6px 0px;
+  color: #ffffff;
+}
+.btn:hover{
+  box-shadow: 2px 2px 2px rgba(20%,20%,40%,0.6);
+}
+.btn:active{
+  box-shadow:inset 2px 2px 2px rgba(20%,20%,20%,0.5);
+}
+@media(max-width:414px){
+  .register .terms{
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .register .registerForm{
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 .footer{
   width: 100%;
   max-height: 232px;
