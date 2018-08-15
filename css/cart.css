@@ -1,0 +1,373 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+  height: auto ;
+}
+.clearfix{
+  clear: both;
+}
+/*****css reset*****/
+
+.wrap{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.header{
+  position: relative;
+  background:#fff url(../img/header_desktop.png)center center no-repeat;/*利用center做到上下左右置中*/
+  max-width: 100%;
+  height: 420px;
+}
+
+.bar{
+  background: rgba(0,0,0,0.75);
+  height: 56px;
+  margin-bottom: 67px; 
+}
+.logo{
+  position: absolute;
+  top: 12px;
+  left: 42px;
+  width: 120px;
+}
+.logo a{
+  background: rgba(0,0,0,0.75);
+  display: block;
+  width: 120px;
+  height: 24px;
+  text-indent:-99999px;
+  background-image: url(../img/logo_w.png);
+}
+
+.menu{
+  float: right;
+  margin-top: 18px;
+  margin-right: 42px;
+}
+.menu li{
+  float: left;
+}
+.menu li a{
+  display: block;
+  color: #ffffff;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+.menu a:hover{
+  border-bottom: 2px solid #ffffff;
+}
+.menu a:active{
+  color: black;
+  border-bottom: 2px solid #000000;
+}
+
+.showmenu {
+  display: none;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.showmenu:active{
+  color: black;
+}
+@media (max-width: 768px){
+  .menu{
+    /*隱藏*/
+    max-height: 0px;
+    overflow: hidden;
+    /*顯示*/
+    transition: 2.3s;
+    position: absolute;
+    z-index: 30;
+    top: 56px;
+    right: 0;
+    left: 0;
+    background: #000000;
+  }
+  .menu{
+    margin: 0;
+  }
+  .menu li{
+    float: none;
+    margin: 1em;
+    border-bottom: 1px dashed #ffffff;
+  }
+  .menu li a{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+  }
+  .menu li a:hover{
+    background: #ffffff;
+    color: #000000;
+  }
+  .showmenu{
+    display: block;
+    margin: 1em;
+    float: right;
+  }
+  .menu-show .menu{
+    max-height: 500px
+  }
+}
+.slogan{
+  margin: 0 auto;
+  max-width: 468px;
+  padding-bottom: 20px;
+  background: rgba(0,0,0,0.35);
+  text-align: center;
+}
+.slogan h2{
+  padding-top: 20px;
+  color: #ffffff;
+  font-size: 36px;
+}
+.slogan p{
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 1em;
+}
+.list{
+  float: left;
+  width: 220px;
+  margin-left: 42px;
+}
+.list h3{
+  text-align: center;
+  color: #3D1101;
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+.list a{
+  display: block;
+  color: #3D1101;
+  text-decoration: none;
+  padding: 6px 0;
+  border-bottom: 1px #3D1101 solid;
+}
+.list a:hover{
+  color: #ffffff;
+  background: #3D1101;
+}
+.list a:active{
+  background: #000000;
+}
+
+
+.searchBar{
+  margin-left: 275px;
+  margin-top: 48px;
+}
+.searchBar input{
+  width: 57%;
+  padding: 6px 0;
+  float: left;
+  border: #3D1101 2px solid;
+}
+.searchBar a{
+  float: left;
+}
+
+.searchBar p{
+  float: left;
+  margin-top: 3px;
+  margin-left: 11.2%;
+  color: #3D1101;
+  font-size: 16px;
+  padding-right: 1.2%;
+  border-right: #3D1101 1px solid;
+}
+.cartimg{
+  margin-left: 17px;
+}
+
+.product{
+  margin-top: -100px;
+  margin-left: 275px;
+}
+.product li{
+  float: left;
+  height: 280px;
+  max-width: 220px;
+  margin:0 20px 30px 0;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.35);
+}
+.product li h3{
+  margin-top: 11px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #3D1101;
+  font-size: 20px;
+}
+.product li p{
+  text-align: center;
+  color: #3D1101;
+  font-size: 14px;
+  margin: 2px 0;
+  margin-bottom: 6px;
+}
+.dash{
+  border-bottom: #3D1101 1px solid;
+  width: 40%;
+  margin: 0 auto;
+}
+.product .money{
+  display: block;
+  font-size: 20px;
+  color: #3D1101;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+.product li a{
+  text-decoration: none;
+  color: #FF5E45;
+  border: #FF5E45 2px solid;
+  border-radius: 2px;
+  padding: 5px 49px 5px 42px;
+  margin-left: 15px;
+}
+.product li a:hover{
+  background: #FF5E45;
+  color: #ffffff;
+}
+@media(max-width:414px){
+  .list{
+    float: none;
+    margin: 0 auto;
+  }
+  .searchBar{
+    margin: 0 auto;
+  }
+  .search{
+    margin-top: 20px;
+    width: 100%;
+  }
+  .search input{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .checkout {
+    margin-left: 68%;
+  }
+  .product{
+    margin: 0 auto;
+  }
+  .product li{
+    float: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .product li a{
+    margin-left: 15%;
+  }
+}
+.footer{
+  width: 100%;
+  max-height: 232px;
+  background: rgba(0,0,0,0.02);
+}
+.footer .regarding{
+  width: 30%;
+  margin-top: 50px;
+  margin-left: 43px;
+  float: left;
+}
+
+.footer h3{
+  font-size: 24px;
+  color: #3D1101;
+  margin-bottom: 16px;
+}
+.footer li{
+  display: block;
+  font-size: 16px;
+  color: #3D1101;
+  margin-bottom: 0.25em;
+}
+.footer .contact{
+  width: 30%;
+  margin-top: 50px;
+  margin-left: 20px;
+  float: left;
+}
+.bottomLogo{
+  width: 25%;
+  float: right;
+  margin-top: 54px;
+  margin-right: 49px;
+}
+@media(max-width:768px){
+  .footer .regarding{
+    max-width: 235px;
+    margin-left: 11px;
+  }
+  .footer .contact{
+    max-width: 235px;
+  }
+}
+@media(max-width:414px){
+  .footer .regarding{
+    width: 80%;
+    margin-left: 5%;
+  }
+  .footer .contact{
+    width: 80%;
+    margin-left: 5%;
+  }
+  .bottomLogo{
+    width: 80%;
+    margin-left: 5%;
+}
