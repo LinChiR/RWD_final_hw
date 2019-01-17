@@ -1,74 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/login.css">
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/all.js"></script>
+  <meta name="description" content="美味好吃的餐廳"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <meta property="og:title" content="FB的標題">
+  <meta property="og:description" content="FB的描述">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="FB的網址">
+  <meta property="og:image" content="FB的圖片">
+
+  <script src="js/jquery-3.1.1.min.js"></script> 
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <title>六角西餐廳</title>
 </head>
-
 <body>
   <div class="wrap">
     <div class="header">
       <div class="bar">
-        <div class="logo">
-          <a href="#">六角西餐廳</a>
-        </div>
-        <ul class="menu">
-          <li><a href="#">特色</a></li>
-          <li><a href="#">主廚</a></li>
-          <li><a href="#">地圖</a></li>
-        </ul>
-        <a href="#" class="showmenu">menu</a>
+          <div class="logo">
+            <a href="#">
+              <h1>六角西餐廳</h1>
+            </a>
+          </div>
+          <ul class="menu">
+            <li><a href="#">特色</a></li>
+            <li><a href="#">主廚</a></li>
+            <li><a href="#">地圖</a></li>
+          </ul>
+          <a href="#" class="showmenu"><i class="fas fa-bars"></i></a>
+          <div class="clearfix"></div>
       </div>
       <div class="slogan">
         <h2>咬一口就無法忘懷的漢堡</h2>
-        <p>七夕絕對無法錯過的好滋味</br>六角大漢堡</p>
+        <p>七夕絕對無法錯過的好滋味<br>
+          <i class="fas fa-utensils"></i>六角大漢堡<i class="fas fa-utensils"></i> </p>
       </div>
     </div>
-    <div class="content">
-      <div class="mainLogo">
-        <img src="img/logo_l(null).svg">
-        <h3>享受美好味道</h3>
-      </div>
-      <div class="login">
-        <h4>LOGIN</h4>
-        <label for="EmailAddress">Email Address</label></br>
-        <input id="EmailAddress" placeholder="請輸入Email" type="text"></br>
-        <label for="Password">Password</label></br>
-        <input id="Password" placeholder="請輸入密碼" type="text">
-        <a href="#">忘記密碼?</a></br>
-        <input class="btn" style="background: rgba(0,0,0,0.35)" type="button" value="註冊">
-        <input class="btn" style="background:#F56C23;" type="button" value="登入">
-      </div>
+    <div class="loginContent">
+        <h2>六角西餐廳</h2>
+        <h3>享受美食好味道</h3>
+        <div class="login">
+            <h4>LOGIN</h4>
+            <div class="loginForm">
+                <label for="email">Email Address*</label><br>
+                <input type="email" class="text" id="email"><br>
+                <label for="password">Password*</label><br>
+                <input type="password" id="password" class="text" placeholder="請輸入密碼"><br>
+                <a href="#">忘記密碼</a><br>
+                <input type="button" class="registerBtn" value="註冊">
+                <input type="button" class="loginBtn" value="登入">
+            </div>
+            <div class="clearfix"></div>
+        </div>
     </div>
+   
+    
     <div class="footer">
-      <div class="regarding">
+      <div class="about">
         <h3>關於 六角西餐廳</h3>
-        <ul>
-          <li>Curabitur lobortis id lorem id bibndum.</li>
-          <li>Ut id consectetur magna.</li>
-          <li>Quisque volutpat augue enim,</li>
-          <li>pulvinar lobortis nibh lacinia at.</li>
-        </ul>
+        <p>Curabitur lobortis id lorem id bibndum.<br>
+           Ut id consectetur magna. Quisque <br>
+           volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
       </div>
       <div class="contact">
         <h3>聯絡方式</h3>
         <ul>
-          <li>• 高雄市中正五路到底</li>
-          <li>• +886 886 886</li>
-          <li>• service@hexschool.com</li>
+          <li>•	高雄市中正五路到底</li>
+          <li>•	+886 886 886</li>
+          <li>•	service@hexschool.com</li>
         </ul>
       </div>
-      <div class="bottomLogo">
-        <img src="img/logo_l(null).svg" alt="">
+      <div class="socialMedia">
+        <img src="img/logo_l@svg.svg">
+        <ul>
+          <li class="google"><i class="fab fa-google-plus-square fa-2x"></i></li>
+          <li class="twitter"><i class="fab fa-twitter-square fa-2x"></i></li>
+          <li class="facebook"><i class="fab fa-facebook-square fa-2x"></i></li>
+          <div class="clearfix"></div>
+        </ul>
       </div>
       <div class="clearfix"></div>
     </div>
   </div>
-  </div>
+  <script src="js/all.js"></script>   
+  
 </body>
+</html>
